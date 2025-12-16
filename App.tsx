@@ -7,6 +7,7 @@ import { Projects } from './components/Projects';
 import { Experience } from './components/Experience';
 import { AIChatTerminal } from './components/AIChatTerminal';
 import { InteractiveDemos } from './components/InteractiveDemos';
+import { generateResumePDF } from './services/resumeService';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -113,10 +114,13 @@ export default function App() {
                  <Linkedin size={20} /> <span className="hidden sm:inline">LinkedIn</span>
                </a>
             </div>
-            <div className="inline-flex items-center gap-3 px-6 py-3 border border-slate-800 rounded-lg hover:border-slate-700 hover:bg-slate-900 transition-all cursor-pointer group">
+            <button 
+              onClick={generateResumePDF}
+              className="inline-flex items-center gap-3 px-6 py-3 border border-slate-800 rounded-lg hover:border-slate-700 hover:bg-slate-900 transition-all cursor-pointer group"
+            >
               <FileDown className="text-primary-500 group-hover:scale-110 transition-transform" />
               <span className="text-slate-200 font-medium">Download Resume (PDF)</span>
-            </div>
+            </button>
             <p className="mt-16 text-slate-600 text-sm">
               &copy; {new Date().getFullYear()} Dimitri Arnold. Built with React & Google Gemini.
             </p>
