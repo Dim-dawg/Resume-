@@ -47,21 +47,21 @@ export const projects = [
     problem: "Customer support team was overwhelmed by manual ticket categorization, leading to slow response times.",
     solution: "Designed an automated pipeline using Apps Script to ingest emails, analyze intent via Gemini API, and route to appropriate departments.",
     tech: ["Google Apps Script", "Gemini API", "Gmail API"],
-    impact: "Reduced triage time by 75% and improved routing accuracy to 92%."
+    impact: "Substantially reduced triage time and optimized routing accuracy."
   },
   {
     title: "Inventory Intelligence Dashboard",
     problem: "Warehouse managers struggled to predict stock outages using static spreadsheets.",
     solution: "Built a React-based dashboard connecting directly to MySQL that uses historical data trends to forecast demand.",
     tech: ["React", "MySQL", "Node.js", "Chart.js"],
-    impact: "Prevented 15% of projected stock-outs in Q1 and visualized real-time velocity metrics."
+    impact: "Consistently prevented projected stock-outs and visualized real-time velocity metrics."
   },
   {
     title: "Legal Document RAG System",
     problem: "Legal team spent hours searching through PDF contracts for specific clauses.",
     solution: "Developed an internal retrieval tool that indexes PDF text into vector storage, allowing natural language queries.",
     tech: ["Python", "Vector DB", "OpenAI API", "Streamlit"],
-    impact: "Cut document review time by 40% per case file."
+    impact: "Significantly reduced document review time per case file."
   }
 ];
 
